@@ -1,0 +1,1 @@
+alert("Hello My Darling! This is the first say to JavaScript")
