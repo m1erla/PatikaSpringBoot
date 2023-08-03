@@ -33,4 +33,11 @@ public class ThymeleafController {
         model.addAttribute("key_model_access_2","I am coming from model-2");
         return "thymeleaf_file/thymeleaf3";
     }
+    // http://localhost:8080/thymeleaf4
+    @GetMapping("/thymeleaf4")
+    public String getThymeleaf4Model(Model model){
+        model.addAttribute("key_model_access_1","I am coming from model-1");
+        model.addAttribute("key_model_access_2","I am coming from model-2");
+        return "thymeleaf4";
+    }
 }
