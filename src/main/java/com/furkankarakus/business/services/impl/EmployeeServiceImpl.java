@@ -66,7 +66,7 @@ public class EmployeeServiceImpl implements EmployeeServices {
 
         employee.setFirstName(employee.getFirstName());
         employee.setLastName(employee.getLastName());
-        employee.setEmail(employee.getEmail());
+        employee.setEmailId(employee.getEmailId());
 
         EmployeeEntity updateEmployee = employeeRepository.save(employee);
         EmployeeDto employeeDto = EntityToDto(updateEmployee);//model

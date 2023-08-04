@@ -23,7 +23,7 @@ public class EmployeeEntity extends BaseEntity implements Serializable {
     private String firstName;
     @Column(name = "last_name")
     private String lastName;
-    @Column(name = "email")
-    private String email;
+    @Column(name = "email_name")
+    private String emailId;
 
 }
