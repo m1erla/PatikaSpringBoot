@@ -3,10 +3,7 @@ package com.furkankarakus.data.entity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.extern.log4j.Log4j2;
 
 import java.io.Serializable;
@@ -18,6 +15,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "employees")
+@EqualsAndHashCode(callSuper = false)
 public class EmployeeEntity extends BaseEntity implements Serializable {
     @Column(name = "first_name")
     private String firstName;
